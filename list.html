@@ -1,0 +1,50 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        JavaScript | Add a key/value
+        pair to JavaScript object 
+    </title> 
+</head> 
+      
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        JavaScript | Add a key/value
+        pair to JavaScript object 
+    </title> 
+</head> 
+      
+<body style = "text-align:center;"> 
+    <h1 style = "color:green;" > 
+        Plant list 
+    </h1> 
+          
+    <p id='Original' style="color:blue;"></p>
+          
+    <button onclick = "addPlant()"> 
+        Click to add 
+    </button> 
+          
+    <p id='New' style="color:green;"></p>
+          
+    <script> 
+        var original = {fName:'Meghan', lName:'Casper', 
+                    plant1:'Hydrangea', plant2:'Peony'};
+        var original_write = document.getElementById('Original'); 
+        var new_write = document.getElementById('New');
+        original_write.innerHTML = JSON.stringify(original);
+          
+        function addPlant() {
+            original['plant3'] = 'Rose';
+            new_write.innerHTML = JSON.stringify(original);     
+        } 
+    </script> 
+</body> 
+  
+</html>
