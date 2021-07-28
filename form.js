@@ -1,4 +1,0 @@
-
-
-
-//setAttribute(attname, attvalue)

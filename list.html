@@ -34,12 +34,18 @@
     <p id='New' style="color:green;"></p>
           
     <script> 
+        //Figure out how to use user.JSON as object
         var original = {fName:'Meghan', lName:'Casper', 
                     plant1:'Hydrangea', plant2:'Peony'};
         var original_write = document.getElementById('Original'); 
         var new_write = document.getElementById('New');
         original_write.innerHTML = JSON.stringify(original);
           
+        /*function addPlant(plantID, plantName) {
+            original[plantID] = plantName;
+            new_write.innerHTML = JSON.stringify(original);     
+        }*/ 
+
         function addPlant() {
             original['plant3'] = 'Rose';
             new_write.innerHTML = JSON.stringify(original);     
